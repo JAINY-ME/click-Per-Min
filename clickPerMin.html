@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click Pre Min</title>
+    <link rel="icon" href="img1.jpg" type="image/jpg">
+</head>
+
+<body>
+    <div class="main" style="text-align: center; font-size:50px;" style="justify-content: center;">
+        <div class="num">
+            <p id="clicks" style="color: rgb(128, 127, 127);">The score is : 0</p>
+        </div>
+        <div class="but">
+            <button type="button" onclick="myfunction()"
+                style="font-size: 30px; border-radius: 10px; border:2px solid white; background-color:lightblue; height:4rem; width:15rem; ">Click
+                Me!</button>
+        </div>
+    </div>
+
+    <script>
+        let score = 0
+        function myfunction() {
+            score += 1
+            document.getElementById("clicks").innerHTML = "The Score is : " + score
+        }
+
+    </script>
+</body>
+
+</html>
